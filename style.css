@@ -1,0 +1,16 @@
+body{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.d-flex.flex-row-reverse {
+    height: 90vh;
+}
+ul.navbar-nav.me-auto.m-5 {
+    margin-right: 40px !important;
+}
+button.navbar-toggler.collapsed {
+    border: none !important;
+}
+button.navbar-toggler {
+    border: none;
+}
