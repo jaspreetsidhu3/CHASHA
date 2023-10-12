@@ -1,16 +1,104 @@
+html {
+    scroll-behavior: smooth !important;
+}
 body{
     margin: 0 !important;
     padding: 0 !important;
+    background-color: black;
+    color: white;
+    scroll-behavior: smooth !important;
 }
+.fadeout{
+    opacity: 0.4;
+    transition: opacity 1s linear;
+}
+.hide{
+    width: 0;
+    visibility: hidden;
+    transition: visibility linear;
+}
+.show{
+    bottom: 100%; 
+    transform: translate(0, 100%);
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s 2s, opacity 1s linear;
+} 
+
 .d-flex.flex-row-reverse {
     height: 90vh;
 }
 ul.navbar-nav.me-auto.m-5 {
     margin-right: 40px !important;
 }
-button.navbar-toggler.collapsed {
-    border: none !important;
+button#nav-btn-options {
+    border: none;
 }
 button.navbar-toggler {
     border: none;
+}
+.nav-item:hover{
+    transform: scale(1.2);
+    color: orange;
+    transition: transform 500ms;
+}
+
+.zoomEffect:hover{
+    transform: scale(1.01);
+    transition: transform 500ms;
+}
+.zoomLgEffect:hover{
+    transform: scale(1.2);
+    transition: transform 500ms;
+}
+/* Styling for navbar */
+.custom-nav-bar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.navLink{
+    margin-top: 30px;
+}
+.custom-nav-bar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+  
+.custom-nav-bar a:hover {
+    color: orange;
+}
+  
+.custom-nav-bar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.footer{
+    height: 100%;
+    padding-bottom: 100px !important;
+    padding-top: 40px !important;
+}
+#menu{
+    background-image: url('https://media.istockphoto.com/id/947207308/photo/white-paper-texture-background.jpg?s=1024x1024&w=is&k=20&c=KXE2wWsjOrqkq2H9jleQX-RK2aGjQ5jG8ePu9DL92PA=');
+    color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media screen and (max-height: 450px) {
+    .custom-nav-bar {padding-top: 15px;}
+    .custom-nav-bar a {font-size: 18px;}
 }

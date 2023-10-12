@@ -11,41 +11,40 @@
 </head>
 
 <body>
-    <nav class="navbar">
+    <nav class="navbar navbar-light bg-light shadow-5-strong">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="Final_logo-4.png" width="100" />
+                <img src="Final_logo-4.png" class="zoomLgEffect" width="100" />
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button id="nav-btn-options" class="zoomLgEffect bg-light" type="button" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" onclick="openNav()"></span>
             </button>
 
         </div>
+        <div id="navSupportContent" class="custom-nav-bar bg-dark">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#" class="navLink">HOME</a>
+            <a href="#aboutus" class="navLink">ABOUT US</a>
+            <a href="#menu" class="navLink">MENU</a>
+            <a href="#gallery" class="navLink">GALLERY</a>
+            <a href="#contact" class="navLink">CONTACT</a>
+        </div>
     </nav>
-    <div class="d-flex flex-row-reverse">
-        <div class="collapse bg-dark text-white p-5" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto">
-                <li class="nav-item px-5 mb-3">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item px-5">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-            </ul>
-        </div>
-        <div class="h-100 w-100 bg-dark"
-            style="background: url('https://media.istockphoto.com/id/1316145932/photo/table-top-view-of-spicy-food.webp?b=1&s=170667a&w=0&k=20&c=P3jIQq8gVqlXjd4kP2OrXYyzqEXSWCwwYtwrd81psDY='); background-repeat: no-repeat; background-size: cover;">
-        </div>
+    <!-- Landing section -->
+    <div id="homepageImage"
+        style="background: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80'); background-repeat: no-repeat; background-size: cover; width: 100%; height: 100vh;">
     </div>
-    <div class="container mt-5">
+
+
+    <br><br>
+    <!-- About us section -->
+    <div class="container mt-3 ml-1" id="aboutus">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-8">
                 <div>
-                    <h3>Our story</h3>
+                    <h2>ABOUT US</h2>
                 </div>
-                <p>
+                <p class="text-justify">
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
                     printer
                     took a galley of type and scrambled it to make a type specimen book. It has survived not only five
@@ -53,15 +52,31 @@
                     popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
                     more
                     recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                    printer
+                    took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                    centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                    popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+                    more
+                    recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                    printer
+                    took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                    centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                    popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+                    more
                 </p>
             </div>
-            <div class="col-md-6"
-                style="background: url('https://media.istockphoto.com/id/1316145932/photo/table-top-view-of-spicy-food.webp?b=1&s=170667a&w=0&k=20&c=P3jIQq8gVqlXjd4kP2OrXYyzqEXSWCwwYtwrd81psDY='); background-repeat: no-repeat; background-size: cover;">
+            <div class="col-md-4">
+                <img height="500" style="width: 100%;"
+                    src="https://images.unsplash.com/photo-1557704144-a7cabc673a2c?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1888&amp;q=80">
             </div>
         </div>
     </div>
-    <div class="container mt-5">
-        <h2 class="text-center">Menu</h2>
+
+    <!-- Menu section -->
+    <div class="container mt-5" id="menu">
+        <h2 class="text-center">MENU</h2>
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
@@ -271,25 +286,79 @@
             </div>
         </div>
     </div>
-    <div class="footer bg-dark text-white">
+
+    <br><br><br>
+    <!-- Gallery -->
+    <div id="gallery">
+        <div class="container text-center mt-2">
+            <h2 class="text-center">Gallery</h2>
+            <div class="container mt-2">
+                <div class="row">
+                    <div class="col-sm-3 ml-1 mt-3">
+                        <img class="zoomEffect" style="width: 100%; height: 100%;"
+                            src="https://plus.unsplash.com/premium_photo-1682096940215-ac41ff9af337?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" />
+                    </div>
+                    <div class="col-sm-3 ml-1 mt-3">
+                        <img class="zoomEffect" style="width: 100%; height: 100%;"
+                            src="https://plus.unsplash.com/premium_photo-1682096940215-ac41ff9af337?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" />
+                    </div>
+                    <div class="col-sm-3 ml-1 mt-3">
+                        <img class="zoomEffect" style="width: 100%; height: 100%;"
+                            src="https://plus.unsplash.com/premium_photo-1682096940215-ac41ff9af337?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" />
+                    </div>
+                    <div class="col-sm-3 ml-1 mt-3">
+                        <img class="zoomEffect" style="width: 100%; height: 100%;"
+                            src="https://plus.unsplash.com/premium_photo-1682096940215-ac41ff9af337?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3 ml-1 mt-3">
+                        <img class="zoomEffect" style="width: 100%; height: 100%;"
+                            src="https://plus.unsplash.com/premium_photo-1682096940215-ac41ff9af337?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" />
+                    </div>
+                    <div class="col-sm-3 ml-1 mt-3">
+                        <img class="zoomEffect" style="width: 100%; height: 100%;"
+                            src="https://plus.unsplash.com/premium_photo-1682096940215-ac41ff9af337?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" />
+                    </div>
+                    <div class="col-sm-3 ml-1 mt-3">
+                        <img class="zoomEffect" style="width: 100%; height: 100%;"
+                            src="https://plus.unsplash.com/premium_photo-1682096940215-ac41ff9af337?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" />
+                    </div>
+                    <div class="col-sm-3 ml-1 mt-3">
+                        <img class="zoomEffect" style="width: 100%; height: 100%;"
+                            src="https://plus.unsplash.com/premium_photo-1682096940215-ac41ff9af337?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" />
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-warning text-center mt-5 zoomEffect"> <img src="instagramlogo.png" width="24"
+                    height="24" />
+                Follow us on
+                instagram</button>
+        </div>
+    </div>
+
+    <!-- contact -->
+    <div class="footer mt-5 p-3 container-fluid bg-light text-dark" id="contact">
         <div class="row">
             <div class="col-md-3">
                 <img src="Final_logo-4.png" width="200" height="100" />
             </div>
             <div class="col-md-3">
-                <h5>Location</h5>
-                <p>Location unknown</p>
-                <p>street unknown</p>
+                <h6>Location</h6>
+                <small>Location unknown</small>
+                <br>
+                <small>street unknown</small>
             </div>
             <div class="col-md-3">
-                <h5>Hours</h5>
-                <p>timming unknown</p>
-                <p>timming unknown</p>
+                <h6>Hours</h6>
+                <small>timming unknown</small>
+                <br>
+                <small>timming unknown</small>
             </div>
             <div class="col-md-3">
-                <h5>Lets connect</h5>
-                <p>instagram logo</p>
-                <p>fb logo</p>
+                <h6>Lets connect</h6>
+                <small>instagram logo</small>
+                <small>fb logo</small>
             </div>
         </div>
     </div>
