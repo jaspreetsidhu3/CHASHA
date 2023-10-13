@@ -8,6 +8,17 @@ body{
     color: white;
     scroll-behavior: smooth !important;
 }
+.navbar{
+    opacity: 0.4;
+}
+#landingPage{
+    width: 100%; 
+    height: 100vh; 
+    background-attachment: fixed;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
 .fadeout{
     opacity: 0.4;
     transition: opacity 1s linear;

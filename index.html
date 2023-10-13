@@ -11,28 +11,27 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-light shadow-5-strong">
+    <nav class="navbar navbar-light bg-light position-absolute w-100">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="Final_logo-4.png" class="zoomLgEffect" width="100" />
+
             </a>
             <button id="nav-btn-options" class="zoomLgEffect bg-light" type="button" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon" onclick="openNav()"></span>
             </button>
-
-        </div>
-        <div id="navSupportContent" class="custom-nav-bar bg-dark">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#" class="navLink">HOME</a>
-            <a href="#aboutus" class="navLink">ABOUT US</a>
-            <a href="#menu" class="navLink">MENU</a>
-            <a href="#gallery" class="navLink">GALLERY</a>
-            <a href="#contact" class="navLink">CONTACT</a>
         </div>
     </nav>
+    <div id="navSupportContent" class="custom-nav-bar bg-dark">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#" class="navLink">HOME</a>
+        <a href="#aboutus" class="navLink">ABOUT US</a>
+        <a href="#menu" class="navLink">MENU</a>
+        <a href="#gallery" class="navLink">GALLERY</a>
+        <a href="#contact" class="navLink">CONTACT</a>
+    </div>
     <!-- Landing section -->
-    <div id="homepageImage"
-        style="background: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80'); background-repeat: no-repeat; background-size: cover; width: 100%; height: 100vh;">
+    <div id="homepageImage">
+        <img src="landingpage.png" id="landingPage" />
     </div>
 
 
