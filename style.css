@@ -19,9 +19,6 @@ body{
     background-repeat: no-repeat; 
     background-size: cover;
 }
-#appLogo{
-    z-index: 0;
-}
 .fadeout{
     opacity: 0.4;
     transition: opacity 1s linear;
