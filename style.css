@@ -19,6 +19,12 @@ body{
     background-repeat: no-repeat; 
     background-size: cover;
 }
+#appLogo{
+    position:absolute;
+    left:32%;
+    top:30%;
+    max-width: 40%;
+}
 .fadeout{
     opacity: 0.4;
     transition: opacity 1s linear;
