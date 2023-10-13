@@ -20,10 +20,7 @@ body{
     background-size: cover;
 }
 #appLogo{
-    position:absolute;
-    left:32%;
-    top:30%;
-    max-width: 40%;
+    z-index: 0;
 }
 .fadeout{
     opacity: 0.4;
