@@ -45,6 +45,13 @@ ul.navbar-nav.me-auto.m-5 {
 button#nav-btn-options {
     border: none;
 }
+.custom-toggler.navbar-toggler {
+    border-color: rgb(255,102,203);
+} 
+#menuIcon{
+    width: 50px;
+    height: 50px;
+}
 button.navbar-toggler {
     border: none;
 }
@@ -112,4 +119,8 @@ button.navbar-toggler {
 @media screen and (max-height: 450px) {
     .custom-nav-bar {padding-top: 15px;}
     .custom-nav-bar a {font-size: 18px;}
+    
 }
+@media only screen and (max-width: 600px) {
+    #landingPage  {height: 63vh;}
+  }
