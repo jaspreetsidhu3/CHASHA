@@ -8,9 +8,7 @@ body{
     color: white;
     scroll-behavior: smooth !important;
 }
-.navbar{
-    opacity: 0.4;
-}
+
 #landingPage{
     width: 100%; 
     height: 100vh; 
@@ -49,6 +47,7 @@ button#nav-btn-options {
     border-color: rgb(255,102,203);
 } 
 #menuIcon{
+    cursor: pointer;
     width: 50px;
     height: 50px;
 }
