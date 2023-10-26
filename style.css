@@ -1,3 +1,4 @@
+@font-face { font-family: Clattering; src: url('fonts/clattering/Clattering.ttf'); } 
 html {
     scroll-behavior: smooth !important;
 }
@@ -8,7 +9,10 @@ body{
     color: white;
     scroll-behavior: smooth !important;
 }
-
+h2{
+    font-family: Clattering;
+    font-size: 48px;
+}
 #landingPage{
     width: 100%; 
     height: 100vh; 
