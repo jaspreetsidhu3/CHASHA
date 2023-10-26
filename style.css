@@ -126,5 +126,5 @@ button.navbar-toggler {
 }
 @media only screen and (max-width: 600px) {
     #landingPage  {height: 56vh;}
-    #aboutUsImage  {height: 20px;}
+    #aboutUsImage  {height: 400px !important;}
   }
