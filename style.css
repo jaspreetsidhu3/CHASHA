@@ -11,7 +11,7 @@ body{
 }
 h2{
     font-family: Clattering;
-    font-size: 48px;
+    font-size: 32px;
 }
 #landingPage{
     width: 100%; 
@@ -126,4 +126,5 @@ button.navbar-toggler {
 }
 @media only screen and (max-width: 600px) {
     #landingPage  {height: 56vh;}
+    #aboutUsImage  {height: 20px;}
   }

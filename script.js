@@ -14,5 +14,5 @@ function openNav() {
   
 function closeNav() {
     document.getElementById("navSupportContent").style.width = "0";
-    homePageImage.classList.remove('fadeout')
+    homePageImage.classList.remove('fadeout');
 }
