@@ -16,3 +16,4 @@ function closeNav() {
     document.getElementById("navSupportContent").style.width = "0";
     homePageImage.classList.remove('fadeout');
 }
+

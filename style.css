@@ -55,6 +55,35 @@ button#nav-btn-options {
     width: 50px;
     height: 50px;
 }
+#menu{
+    font-family: Clattering;
+}
+.card{
+    background-color: black;
+}
+.menuItem{
+    cursor: pointer;
+    z-index: 0;
+    background-color: rgb(0, 0, 0);
+}
+.menuItem:hover .card{
+    padding: 10px;
+    width: 350px;
+    background-color: white !important;
+    color: black !important;
+    transform: scale(1.03);
+    transition: 1s !important;
+}
+.menuItem:hover .extraDetails{
+    opacity: 1;
+    transition: 1s !important;
+    height: auto;
+}
+.extraDetails{
+    opacity: 0;
+    height: 0;
+}
+
 button.navbar-toggler {
     border: none;
 }
@@ -63,7 +92,6 @@ button.navbar-toggler {
     color: orange;
     transition: transform 500ms;
 }
-
 .zoomEffect:hover{
     transform: scale(1.01);
     transition: transform 500ms;
@@ -109,16 +137,18 @@ button.navbar-toggler {
     margin-left: 50px;
 }
 .footer{
+    background-color: black;
+    color: white;
     height: 100%;
     padding-bottom: 100px !important;
     padding-top: 40px !important;
 }
-#menu{
-    background-image: url('https://media.istockphoto.com/id/947207308/photo/white-paper-texture-background.jpg?s=1024x1024&w=is&k=20&c=KXE2wWsjOrqkq2H9jleQX-RK2aGjQ5jG8ePu9DL92PA=');
-    color: black;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+.mrglt-3{
+    margin-left: 10px;
+}   
+.mrglt-100{
+    margin-left: 100px;
+}  
 @media screen and (max-height: 450px) {
     .custom-nav-bar {padding-top: 15px;}
     .custom-nav-bar a {font-size: 18px;}
