@@ -74,16 +74,15 @@ button#nav-btn-options {
     width: 350px;
     background-color: white !important;
     color: black !important;
-    transform: scale(1.03);
-    transition: 1.5s !important;
+    transition: 0.8s ease-in;
 }
 .menuItem:hover .menuImage{
     transform: scale(1.15);
 }
 .menuItem:hover .extraDetails{
     opacity: 1;
-    transition: 1s !important;
-    height: auto;
+    height: 80px;
+    transition: height 1s ease-in;
 }
 .extraDetails{
     opacity: 0;
