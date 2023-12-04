@@ -63,31 +63,46 @@ button#nav-btn-options {
 }
 .card{
     background-color: black;
+    transition: 1.3s ease-in;
+    transition-delay: 0.5s;
 }
 .menuItem{
     cursor: pointer;
     z-index: 0;
     background-color: rgb(0, 0, 0);
+    transition: 0.8s ease-in;
+    transition-delay: 0.5s;
 }
 .menuItem:hover .card{
+    content: '';
     padding: 10px;
     width: 350px;
     background-color: white !important;
     color: black !important;
     transition: 0.8s ease-in;
+    transition-delay: 0.5s;
+}
+.menuImage{
+    transition: 0.8s ease-in;
+    transition-delay: 0.5s;
 }
 .menuItem:hover .menuImage{
     transform: scale(1.15);
+    transition: 0.8s ease-in;
+    transition-delay: 0.5s;
 }
 .menuItem:hover .extraDetails{
     opacity: 1;
     height: 80px;
     transition: height 1s ease-in;
+    transition-delay: 0.5s;
 }
 .extraDetails{
     opacity: 0;
     height: 0;
     color: black;
+    transition: 0.8s ease-in;
+    transition-delay: 0.5s;
 }
 
 button.navbar-toggler {
