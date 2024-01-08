@@ -12,7 +12,17 @@ body{
 .bg-dark{
     background-color: black !important;
 }
-
+.nav-link:hover{
+    background-color: black !important;
+    color: white !important;  
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.nav-item:hover{
+ background-color: black;
+ color: white;
+ cursor: pointer;
+}
 #homepageImage{
     height: 100vh;
     background-repeat: no-repeat;
@@ -73,5 +83,4 @@ h1{
         top: 25%;
     }
     #aboutUsImage  {height: 400px !important;}
-    .nav-link{ font-size: 12px;}
 }
