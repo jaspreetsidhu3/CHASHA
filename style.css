@@ -9,174 +9,63 @@ body{
     color: white;
     scroll-behavior: smooth !important;
 }
+.bg-dark{
+    background-color: black !important;
+}
+
+#homepageImage{
+    background-image: url('./images/shutterstock_2204638351-Converted-edited-2.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+#homepageImage img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 20%;
+}
+a.btn.btn-light {
+    width: 35%;
+    box-shadow: white 1px 2px 11px 2px;
+}
+.navbar-brand{
+    font-family: Clattering;
+    font-size: 32px;
+}
+iframe {
+    border: 0;
+    box-shadow: black 1px 1px 19px 3px;
+}   
 h2{
     font-family: Clattering;
     font-size: 32px;
 }
-#landingPage{
-    width: 100%; 
-    height: 100vh; 
-    background-attachment: fixed;
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover;
+h1{
+    font-family: Clattering;
+    font-size: 52px;
 }
 #aboutus{
     background-color: white;
 }
-.fadeout{
-    opacity: 0.4;
-    transition: opacity 1s linear;
-}
-.hide{
-    width: 0;
-    visibility: hidden;
-    transition: visibility linear;
-}
-.show{
-    bottom: 100%; 
-    transform: translate(0, 100%);
-    visibility: visible;
-    opacity: 1;
-    transition: visibility 0s 2s, opacity 1s linear;
-} 
 
-.d-flex.flex-row-reverse {
-    height: 90vh;
-}
-ul.navbar-nav.me-auto.m-5 {
-    margin-right: 40px !important;
-}
-button#nav-btn-options {
-    border: none;
-}
-.custom-toggler.navbar-toggler {
-    border-color: rgb(255,102,203);
-} 
-#menuIcon{
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-}
-#menu{
-    font-family: Clattering;
-}
-.card{
-    background-color: black;
-    transition: 1.3s ease-in;
-    transition-delay: 0.5s;
-    width: 100%;
-}
-.menuItem{
-    cursor: pointer;
-    z-index: 0;
-    background-color: rgb(0, 0, 0);
-    transition: 0.8s ease-in;
-    transition-delay: 0.5s;
-}
-.menuItem:hover .card{
-    content: '';
-    padding: 10px;
-    width: 100%;
-    background-color: white !important;
-    color: black !important;
-    transition: 0.8s ease-in;
-    transition-delay: 0.5s;
-}
-.menuImage{
-    transition: 0.8s ease-in;
-    transition-delay: 0.5s;
-}
-.menuItem:hover .menuImage{
-    transform: scale(1.1);
-    transition: 0.8s ease-in;
-    transition-delay: 0.5s;
-}
-.menuItem:hover .extraDetails{
-    opacity: 1;
-    height: 80px;
-    transition: height 1s ease-in;
-    transition-delay: 0.5s;
-}
-.extraDetails{
-    opacity: 0;
-    height: 0;
-    color: black;
-    transition: 0.8s ease-in;
-    transition-delay: 0.5s;
-}
-
-button.navbar-toggler {
-    border: none;
-}
-.nav-item:hover{
-    transform: scale(1.2);
-    color: orange;
-    transition: transform 500ms;
-}
-.zoomEffect:hover{
-    transform: scale(1.01);
-    transition: transform 500ms;
-}
-.zoomLgEffect:hover{
-    transform: scale(1.2);
-    transition: transform 500ms;
-}
-/* Styling for navbar */
-.custom-nav-bar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    background-color: black;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-.navLink{
-    margin-top: 30px;
-}
-.custom-nav-bar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-}
-  
-.custom-nav-bar a:hover {
-    color: orange;
-}
-  
-.custom-nav-bar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
 .footer{
     background-color: black;
     color: white;
-    height: 100%;
-    padding-bottom: 100px !important;
-    padding-top: 40px !important;
 }
-.mrglt-3{
-    margin-left: 10px;
-}   
-.mrglt-100{
-    margin-left: 100px;
-}  
-@media screen and (max-height: 450px) {
-    .custom-nav-bar {padding-top: 15px;}
-    .custom-nav-bar a {font-size: 18px;}
-    
-}
+
 @media only screen and (max-width: 600px) {
-    #landingPage  {height: 56vh;}
+    #homepageImage  {height: 56vh;}
+    #homepageImage img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 25%;
+    }
     #aboutUsImage  {height: 400px !important;}
-  }
+}

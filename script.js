@@ -1,19 +1,12 @@
-var space=document.getElementsByClassName('space');
-var homePageImage=document.getElementById('homepageImage');
-homePageImage.classList.remove('fadeout')
-
-
-for (var i = 0; i < space.length; i++) {
-    space.item(i).innerText="---------------------";
- }
-
-function openNav() {
-    document.getElementById("navSupportContent").style.width = "250px";
-    homePageImage.classList.add('fadeout');
-}
-  
-function closeNav() {
-    document.getElementById("navSupportContent").style.width = "0";
-    homePageImage.classList.remove('fadeout');
-}
-
+var navToggle=document.getElementById('btn-nav-toggle');
+let toggleCount=0;
+navToggle.addEventListener("click", function(){
+    var logo=document.getElementById('logo_web');
+    if(toggleCount%2==0){
+        logo.style.top="50%";
+    }
+    else{
+        logo.style.top="25%";
+    }
+    toggleCount++;
+});

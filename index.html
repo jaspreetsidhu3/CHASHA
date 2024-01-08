@@ -13,26 +13,35 @@
 
 <body>
     <!--NAV BAR-->
-    <nav class="navbar position-absolute w-100">
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-            </a>
-            <span id="menuIcon" class="navbar-dark" onclick="openNav()"><img src="icons/menu.png" alt="menu_icon"
-                    width="50" height="40" /></span>
+            <a class="navbar-brand" href="#">Cha Sha</a>
+            <button id="btn-nav-toggle" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#aboutus">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <div id="navSupportContent" class="custom-nav-bar bg-dark">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#" class="navLink">HOME</a>
-        <a href="#aboutus" class="navLink">ABOUT US</a>
-        <a href="#menu" class="navLink">MENU</a>
-        <a href="#contact" class="navLink">CONTACT</a>
-    </div>
-
     <!-- Landing section -->
     <div id="homepageImage">
-        <img src="images/chasha_bg.png" id="landingPage" alt="landing_page" />
+        <img id="logo_web" alt="Landing_page_image" src="./images/Logo_web.png" width="100">
     </div>
 
     <!-- About us section -->
@@ -43,47 +52,17 @@
                     <div>
                         <h2>ABOUT US</h2>
                     </div>
-                    <p class="text-justify" style="text-align: justify;">
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                        printer
-                        took a galley of type and scrambled it to make a type specimen book. It has survived not only
-                        five
-                        centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It
-                        was
-                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                        and
-                        more
-                        recently with desktop publishing software like Aldus PageMaker including versions of Lorem
-                        Ipsum.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                        printer
-                        took a galley of type and scrambled it to make a type specimen book. It has survived not only
-                        five
-                        centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It
-                        was
-                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                        and
-                        more
-                        recently with desktop publishing software like Aldus PageMaker including versions of Lorem
-                        Ipsum.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                        printer
-                        took a galley of type and scrambled it to make a type specimen book. It has survived not only
-                        five
-                        centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It
-                        was
-                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                        and
-                        more
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                        printer
-                        took a galley of type and scrambled it to make a type specimen book. It has survived not only
-                        five
-                        centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It
-                        was
-                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                        and
-                        more
+                    <p class="text-justify" style="text-align: justify; font-size: 21px;">
+                        At Cha Sha, our journey is rooted in the rich tapestry of Pakistani tradition and the aromatic
+                        allure of tandoori chai. Born from a passion for sharing the authentic flavours of our heritage,
+                        Cha Sha is more than just a fast-food destination—it's a celebration of handcrafted experiences.
+                        Our story unfolds in the heart of Pakistani culinary artistry, where the art of making tandoori
+                        chai in handmade clay cups becomes a mesmerizing dance of flavours. Each cup tells a tale of
+                        tradition, passed down through generations, and each sip invites you to savour the warmth of our
+                        culture. From the bustling streets of Pakistan to the heart of our kitchen, Cha Sha is a labour
+                        of love, a place where the authenticity of our roots meets the innovation of our craft. Join us
+                        on a journey of taste and tradition, where every cup of chai is a testament to our dedication to
+                        serving you the best of Pakistan's street food culture
                     </p>
                 </div>
                 <div class="col-md-6">
@@ -95,304 +74,40 @@
     </div>
 
     <!-- Menu section -->
-    <div class="container mt-5 mb-5" id="menu">
-        <h2>MENU</h2>
-        <div class="row mt-5">
-            <div class="col-md-4 menuItem">
-                <div class="p-3 card text-light">
-                    <div class="d-flex">
+    <div id="menu">
+        <div class="bg-dark text-light p-2" id="aboutus">
+            <div class="container mt-3 mb-3">
+                <div class="row">
+                    <div class="col-lg-6">
                         <div>
-                            <img class="rounded menuImage" width="150" height="150"
-                                src="images/menuItems/paranthaRoll.jpg" alt="menuItem1" />
+                            <h1>Menu</h1>
                         </div>
-                        <div class="card-block px-3">
-                            <h4 class="card-title mt-3">Parantha Roll</h4>
-                            <p class="card-text mt-3">$12.99</p>
-
-                        </div>
-                    </div>
-                    <div class="mt-3 extraDetails">
-                        <small>A breakfast sweet dish, created with semolina, sugar,
-                            ghee,
-                            and
-                            topped with pistahsios, and almonds</small>
-                        <br>
-                        <small>Serving 1 person (2 Puris & 500ml of halwa)</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 menuItem">
-                <div class="p-3 card text-light">
-                    <div class="d-flex">
-                        <div>
-                            <img class="rounded menuImage" width="150" height="150"
-                                src="images/menuItems/channaChaat.jpg" alt="menuItem1" />
-                        </div>
-                        <div class="card-block px-3">
-                            <h4 class="card-title mt-3">Parantha Roll</h4>
-                            <p class="card-text mt-3">$12.99</p>
-
-                        </div>
-                    </div>
-                    <div class="mt-3 extraDetails">
-                        <small>A breakfast sweet dish, created with semolina, sugar,
-                            ghee,
-                            and
-                            topped with pistahsios, and almonds</small>
-                        <br>
-                        <small>Serving 1 person (2 Puris & 500ml of halwa)</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 menuItem">
-                <div class="p-3 card text-light">
-                    <div class="d-flex">
-                        <div>
-                            <img class="rounded menuImage" width="150" height="150"
-                                src="images/menuItems/chessyFries.jpg" alt="menuItem1" />
-                        </div>
-                        <div class="card-block px-3">
-                            <h4 class="card-title mt-3">Parantha Roll</h4>
-                            <p class="card-text mt-3">$12.99</p>
-
-                        </div>
-                    </div>
-                    <div class="mt-3 extraDetails">
-                        <small>A breakfast sweet dish, created with semolina, sugar,
-                            ghee,
-                            and
-                            topped with pistahsios, and almonds</small>
-                        <br>
-                        <small>Serving 1 person (2 Puris & 500ml of halwa)</small>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row mt-5">
-            <div class="col-md-4 menuItem">
-                <div class="p-3 card text-light">
-                    <div class="d-flex">
-                        <div>
-                            <img class="rounded menuImage" width="150" height="150" src="images/menuItems/falooda.jpg"
-                                alt="menuItem1" />
-                        </div>
-                        <div class="card-block px-3">
-                            <h4 class="card-title mt-3">Parantha Roll</h4>
-                            <p class="card-text mt-3">$12.99</p>
-
-                        </div>
-                    </div>
-                    <div class="mt-3 extraDetails">
-                        <small>A breakfast sweet dish, created with semolina, sugar,
-                            ghee,
-                            and
-                            topped with pistahsios, and almonds</small>
-                        <br>
-                        <small>Serving 1 person (2 Puris & 500ml of halwa)</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 menuItem">
-                <div class="p-3 card text-light">
-                    <div class="d-flex">
-                        <div>
-                            <img class="rounded menuImage" width="150" height="150" src="images/menuItems/golGappa.jpg"
-                                alt="menuItem1" />
-                        </div>
-                        <div class="card-block px-3">
-                            <h4 class="card-title mt-3">Parantha Roll</h4>
-                            <p class="card-text mt-3">$12.99</p>
-
-                        </div>
-                    </div>
-                    <div class="mt-3 extraDetails">
-                        <small>A breakfast sweet dish, created with semolina, sugar,
-                            ghee,
-                            and
-                            topped with pistahsios, and almonds</small>
-                        <br>
-                        <small>Serving 1 person (2 Puris & 500ml of halwa)</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 menuItem">
-                <div class="p-3 card text-light">
-                    <div class="d-flex">
-                        <div>
-                            <img class="rounded menuImage" width="150" height="150" src="images/menuItems/halvaPuri.jpg"
-                                alt="menuItem1" />
-                        </div>
-                        <div class="card-block px-3">
-                            <h4 class="card-title mt-3">Parantha Roll</h4>
-                            <p class="card-text mt-3">$12.99</p>
-
-                        </div>
-                    </div>
-                    <div class="mt-3 extraDetails">
-                        <small>A breakfast sweet dish, created with semolina, sugar,
-                            ghee,
-                            and
-                            topped with pistahsios, and almonds</small>
-                        <br>
-                        <small>Serving 1 person (2 Puris & 500ml of halwa)</small>
-                    </div>
-                </div>
+    </div>
+    <div class="bg-dark h-25">
+        <div class="row">
+            <div class="d-flex align-items-center justify-content-center" style="height: 20vh;">
+                <a target="_blank" href="https://chashaa.com/wp-content/uploads/2023/12/Full-menu.pdf"
+                    class="btn btn-light">See
+                    our
+                    menu</a>
             </div>
         </div>
-        <div class="row mt-5">
-            <div class="col-md-4 menuItem">
-                <div class="p-3 card text-light">
-                    <div class="d-flex">
-                        <div>
-                            <img class="rounded menuImage" width="150" height="150" src="images/menuItems/hamBurger.jpg"
-                                alt="menuItem1" />
-                        </div>
-                        <div class="card-block px-3">
-                            <h4 class="card-title mt-3">Parantha Roll</h4>
-                            <p class="card-text mt-3">$12.99</p>
-
-                        </div>
-                    </div>
-                    <div class="mt-3 extraDetails">
-                        <small>A breakfast sweet dish, created with semolina, sugar,
-                            ghee,
-                            and
-                            topped with pistahsios, and almonds</small>
-                        <br>
-                        <small>Serving 1 person (2 Puris & 500ml of halwa)</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 menuItem">
-                <div class="p-3 card text-light">
-                    <div class="d-flex">
-                        <div>
-                            <img class="rounded menuImage" width="150" height="150" src="images/menuItems/iceCream.jpg"
-                                alt="menuItem1" />
-                        </div>
-                        <div class="card-block px-3">
-                            <h4 class="card-title mt-3">Parantha Roll</h4>
-                            <p class="card-text mt-3">$12.99</p>
-
-                        </div>
-                    </div>
-                    <div class="mt-3 extraDetails">
-                        <small>A breakfast sweet dish, created with semolina, sugar,
-                            ghee,
-                            and
-                            topped with pistahsios, and almonds</small>
-                        <br>
-                        <small>Serving 1 person (2 Puris & 500ml of halwa)</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 menuItem">
-                <div class="p-3 card text-light">
-                    <div class="d-flex">
-                        <div>
-                            <img class="rounded menuImage" width="150" height="150"
-                                src="images/menuItems/mangoJuice.jpg" alt="menuItem1" />
-                        </div>
-                        <div class="card-block px-3">
-                            <h4 class="card-title mt-3">Parantha Roll</h4>
-                            <p class="card-text mt-3">$12.99</p>
-
-                        </div>
-                    </div>
-                    <div class="mt-3 extraDetails">
-                        <small>A breakfast sweet dish, created with semolina, sugar,
-                            ghee,
-                            and
-                            topped with pistahsios, and almonds</small>
-                        <br>
-                        <small>Serving 1 person (2 Puris & 500ml of halwa)</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-5">
-            <div class="col-md-4 menuItem">
-                <div class="p-3 card text-light">
-                    <div class="d-flex">
-                        <div>
-                            <img class="rounded menuImage" width="150" height="150" src="images/menuItems/mintLassi.jpg"
-                                alt="menuItem1" />
-                        </div>
-                        <div class="card-block px-3">
-                            <h4 class="card-title mt-3">Parantha Roll</h4>
-                            <p class="card-text mt-3">$12.99</p>
-
-                        </div>
-                    </div>
-                    <div class="mt-3 extraDetails">
-                        <small>A breakfast sweet dish, created with semolina, sugar,
-                            ghee,
-                            and
-                            topped with pistahsios, and almonds</small>
-                        <br>
-                        <small>Serving 1 person (2 Puris & 500ml of halwa)</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 menuItem">
-                <div class="p-3 card text-light">
-                    <div class="d-flex">
-                        <div>
-                            <img class="rounded menuImage" width="150" height="150"
-                                src="images/menuItems/paranthaRoll.jpg" alt="menuItem1" />
-                        </div>
-                        <div class="card-block px-3">
-                            <h4 class="card-title mt-3">Parantha Roll</h4>
-                            <p class="card-text mt-3">$12.99</p>
-
-                        </div>
-                    </div>
-                    <div class="mt-3 extraDetails">
-                        <small>A breakfast sweet dish, created with semolina, sugar,
-                            ghee,
-                            and
-                            topped with pistahsios, and almonds</small>
-                        <br>
-                        <small>Serving 1 person (2 Puris & 500ml of halwa)</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 menuItem">
-                <div class="p-3 card text-light">
-                    <div class="d-flex">
-                        <div>
-                            <img class="rounded menuImage" width="150" height="150"
-                                src="images/menuItems/tornadoFries.jpg" alt="menuItem1" />
-                        </div>
-                        <div class="card-block px-3">
-                            <h4 class="card-title mt-3">Parantha Roll</h4>
-                            <p class="card-text mt-3">$12.99</p>
-
-                        </div>
-                    </div>
-                    <div class="mt-3 extraDetails">
-                        <small>A breakfast sweet dish, created with semolina, sugar,
-                            ghee,
-                            and
-                            topped with pistahsios, and almonds</small>
-                        <br>
-                        <small>Serving 1 person (2 Puris & 500ml of halwa)</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br><br><br>
+    </div>
     </div>
 
 
     <!-- contact us -->
     <div class="container-fluid bg-light text-dark pt-5 pb-5 mb-5" id="contact"
         style="background-color: white !important;">
-        <div class="row">
-            <div class="col-md-6">
+        <div class="row px-4">
+            <div class="col-md-6 mt-3">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11569.445375576655!2d-79.7252394!3d43.5365091!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b43d595c8bea1%3A0x45f061ab1088bc1e!2sCha%20Sha!5e0!3m2!1sen!2sca!4v1701470269749!5m2!1sen!2sca"
-                    width="100%" height="600" style="border:30px solid black;" allowfullscreen="" loading="lazy"
+                    width="100%" height="570" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="col-md-6">
@@ -451,22 +166,23 @@
 
 
     <!--Footer-->
-    <div class="footer p-3 container-fluid">
-        <div class="row">
-            <div class="col-md-8">
-                <img alt="chasha-logo" src="images/logo.png" width="200" height="100" />
-            </div>
-            <div class="col-md-4">
-                <div class="d-flex mt-4">
+    <div class="footer">
+        <div class="d-flex justify-content-center">
+            <img alt="chasha-logo" src="images/logo.png" width="300" height="100" />
+        </div>
+        <div class="mt-3 d-flex justify-content-center">
+            <div class="px-2">
+                <div class="d-flex">
                     <img src="icons/instagramlogowhite.png" width="30" height="30">
-                    <p class="mrglt-3">Follows Us on Instagram!</p>
                 </div>
-                <div class="d-flex mt-4">
+            </div>
+            <div class="px-2">
+                <div class="d-flex">
                     <img src="icons/fbLogoWhite.png" width="30" height="30">
-                    <p class="mrglt-3">Become Friends with Us on Facebook!</p>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
